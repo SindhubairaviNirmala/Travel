@@ -144,6 +144,61 @@ button {
   }
 }
 
+/* Responsive Navigation */
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #0073e6;
+    padding: 20px;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  nav ul li a {
+    color: white;
+  }
+  
+  /* Hamburger Menu Icon */
+  
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Show navigation on menu icon click */
+  
+  .show-nav {
+    display: block;
+    left: 0;
+  }
+}
+
+
+
+/* Add this to your existing script.js file */
+
+// Toggle navigation on menu icon click
+
+function toggleNav() {
+  const navBar = document.getElementById('nav-bar');
+  navBar.classList.toggle('show-nav');
+}
+```
+
 
 
 
