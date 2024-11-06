@@ -184,7 +184,7 @@ button {
   
   .show-nav {
     display: block;
-    left: 250px;
+    left: -250px;
   }
 }
 
