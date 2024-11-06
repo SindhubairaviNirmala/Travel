@@ -55,3 +55,102 @@ button {
     border: none;
     cursor: pointer;
 }
+
+/* Mobile Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  /* Header and Navigation */
+  header {
+    padding: 0.5rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  /* Sections */
+  section {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  /* Destination */
+  .destination {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  /* Gallery */
+  .gallery-images {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-images img {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+  
+  /* Forms */
+  form {
+    padding: 10px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  button {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Header and Navigation */
+  header {
+    padding: 0.2rem;
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+  
+  /* Sections */
+  section {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  /* Destination */
+  .destination {
+    font-size: 12px;
+  }
+  
+  /* Forms */
+  label {
+    font-size: 14px;
+  }
+  input, textarea {
+    padding: 3px;
+  }
+  button {
+    padding: 3px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
