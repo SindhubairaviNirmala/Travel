@@ -189,23 +189,3 @@ button {
 
 
 
-/* Add this to your existing script.js file */
-
-// Toggle navigation on menu icon click
-
-function toggleNav() {
-  const navBar = document.getElementById('nav-bar');
-  navBar.classList.toggle('show-nav');
-}
-```
-
-
-
-
-
-
-
-
-
-
-
