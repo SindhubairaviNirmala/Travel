@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Explore the World</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Explore the World</h2>
+        <p>Your journey begins here! Discover amazing destinations.</p>
+    </section>
+
+    <section id="destinations">
+        <h2>Destinations</h2>
+        <div class="destination" onclick="showDetails('Paris')">Paris, France</div>
+        <div class="destination" onclick="showDetails('Bali')">Bali, Indonesia</div>
+        <div class="destination" onclick="showDetails('New York')">New York, USA</div>
+        <p id="destination-details"></p>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Trip</h2>
+        <form onsubmit="bookTrip(event)">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" required>
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="booking-result"></p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="paris.jpg" alt="Paris">
+            <img src="bali.jpg" alt="Bali">
+            <img src="newyork.jpg" alt="New York">
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <button onclick="addReview()">Leave a Review</button>
+        <div id="review-list">
+            <!-- Reviews will be added here dynamically -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form onsubmit="submitContact(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="contact-result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
