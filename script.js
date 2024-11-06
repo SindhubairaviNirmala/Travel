@@ -38,3 +38,23 @@ function submitContact(event) {
     const message = document.getElementById('message').value;
     document.getElementById('contact-result').innerText = `Thank you, ${name}. We will contact you at ${email} soon.`;
 }
+/* Add this to your existing script.js file */
+
+// Toggle navigation on menu icon click
+
+function toggleNav() {
+  const navBar = document.getElementById('nav-bar');
+  navBar.classList.toggle('show-nav');
+}
+
+
+
+
+
+
+
+
+
+
+
+
