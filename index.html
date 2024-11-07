@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <header>
+        <div id="top" onclick="menu()">
+        <svg src="http://www.w3.org/2000/svg" viewBox="0 0 7948 512" id="icon"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></div>
+        <h1>Explore the world !</h1>
+        <nav >
+            <ul id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home"><center>
+        <h2>Welcome to Explore the World...</h2>
+        <h4>Your journey begins here! Discover amazing destinations.</h4></center>
+    </section>
+
+    <section id="destinations">
+        <h2>Destinations</h2>
+        <div class="popup-overlay">
+        <div class="destination" id="paris" onclick="paris()"><h3>Paris, France</h3><h6 id="show">click here</h6>
+            <div class="popupbox" id="paris-p">
+                <h4>Explore the Eiffel Tower and enjoy the beautiful cafes of Paris. Discover hidden gems and historical sites.</h4>
+            </div>
+        </div>
+        <div class="destination" id="bali" onclick="bali()"><h3>Bali, Indonesia</h3><h6 id="show">click here</h6>
+            <div class="popupbox" id="bali-b">
+                <h4>Relax on the beaches and explore the temples of Bali. An active volcano offering stunning sunrise views.</h4>
+            </div>   
+        </div>
+        <div class="destination" id="newyork" onclick="newyork()"><h3>New York, USA</h3><h6 id="show">click here</h6>            
+            <div class="popupbox" id="newyork-n">
+                <h4>Experience the iconic skyline and vibrant culture of New York. An 843-acre green oasis in the middle of Manhattan.</h4>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <i class="fa-regular fa-map"></i>
+        <h2>Book Your Trip</h2>
+        <center>
+        <form  class="form" >
+           <h4>Destination :</h4>
+           <input type="text" id="destination" required>
+           <h4>Date :</h4>
+           <input type="date" id="date" required>
+           <h4>Number of People :</h4>
+           <input type="number" id="people" required>
+        </form><br></center>
+        <center><button type="submit" onclick="bookTrip()">Book Now</button></center>
+        <center><p id="booking-result"></p></center>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+           <img src="eiffel-tower-paris-river-seine-sunset-twilight-france.jpg" alt="Paris">
+           <img src="bali-pagoda-indonesia_1150-11021.jpg" alt="Bali">
+           <img src="new-york.jpg" alt="New York" style="height: 220px;">
+        </div>
+    </section>
+
+    <!--<section  id="reviews">
+        <h2>Reviews</h2>
+        <button onclick="addReview()">Leave a Review</button>
+        <div id="review-list">
+        </div>
+    </section>-->
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <center>
+        <form  class="contact">
+          <h4 >Name :</h4>
+          <input type="text" id="name" required>
+          <h4>Email :</h4>
+          <input type="email" id="email" required>
+          <h4>Message :</h4>
+          <textarea id="message" required></textarea>
+        </form><br></center>
+        <center><button type="submit" onclick="submitContact()">Send</button></center>
+        <center><p id="contact-result"></p></center>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

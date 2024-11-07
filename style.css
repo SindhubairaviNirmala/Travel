@@ -1,0 +1,246 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+svg{
+    display: none;
+}
+h6{
+    font-size: 12px;
+    text-decoration:underline;
+    color: whitesmoke;
+}
+header{
+    background-color: rgb(27, 27, 86);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+    z-index: 99;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+h2{
+    text-align: center;
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+}
+
+.destination{
+    cursor: pointer;
+    background-color:rgb(27, 27, 86) ;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(130, 130, 196);
+    border-radius: 5px;
+}
+
+#paris-p ,#bali-b,#newyork-n{
+    display: none;
+}
+
+.form{
+    background-color: rgb(27, 27, 86);
+    color: white;
+    padding: 7px;
+    /*margin-left: 330px;*/
+    text-align: center;
+    height: 340px;
+    width: 65%;
+    border: none;
+    border-radius: 15px;
+}
+
+
+#destination , #date , #people{
+     padding: 5px;
+     margin: 5px;
+}
+
+.form input{
+    padding: 5px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+}
+p{
+    color: rgb(8, 199, 8);
+}
+.contact{
+    background-color: rgb(27, 27, 86);
+    color: white;
+    padding: 6px;
+    /*margin-left: 330px;*/
+    text-align: center;
+    height: 340px;
+    width: 60%;
+    border: none;
+    border-radius: 15px;
+}
+
+.contact input{
+    padding: 5px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact textarea{
+    padding: 5px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+}
+
+#name,#email,#message{
+    padding: 5px;
+    margin: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.gallery-images img{
+    width: 30%;
+    height: auto;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(27, 27, 86);
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*mobile responsive design*/
+@media(min-width:768px)and (max-width:991px){
+    /*header and navigation*/
+    header{
+        padding:0.5rem;
+    }
+
+    
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    nav ul li{
+        margin:10px 0;
+    }
+    section{
+        padding: 10px;
+        margin: 10px;
+    }
+    .destination{
+        padding: 5px;
+        font-size: 14px;
+    }
+    .gallery-images{
+        display: flex;
+        
+    }
+    .gallery-images img{
+        width: 32%;
+        height: auto;
+        margin: 5px ;
+    }
+
+    input,textarea{
+        width:100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    button{
+        width: 20%;
+        padding: 5px;
+    }
+}
+@media (max-width:767px){
+    header{
+        padding: 10px;
+        margin-top: -30px;
+    }
+    svg{
+        display: block;
+        position: relative;
+        top: 55px;
+    }
+    nav ul li{
+        margin: 5px 0;
+    }
+    nav ul{
+        display: none;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 130px;
+        height: 38vh;
+        padding: 20px;
+        background-color: rgb(27, 27, 86);
+        flex-direction: column;
+        transition: 1s;
+    }
+    nav ul li {
+        padding: 7px;
+        text-align: left;
+    }
+    section{
+        padding: 5px;
+        margin: 5px;
+    }
+    .destination{
+        font-size: 16px;
+    }
+    .gallery-images{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery-images img{
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+
+
+    input,textarea{
+        padding: 3px;
+    }
+    button{
+        padding: 8px;
+    }
+}
